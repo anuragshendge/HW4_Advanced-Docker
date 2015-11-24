@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH_TO_GREEN=/root/part2/green-www/
+
+
+GIT_WORK_TREE=$PATH_TO_GREEN git checkout -f
+
+docker pull localhost:5000/part3app:latest
+
+docker stop green_part3
+docker rm green_part3
+
+docker  run -p 5050:8080 -d --name green_part3 part3app

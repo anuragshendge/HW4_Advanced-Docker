@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PATH_TO_BLUE=/root/part2/blue-www/
+
+
+GIT_WORK_TREE=$PATH_TO_BLUE git checkout -f
+
+docker pull localhost:5000/part3app:latest
+
+docker stop blue_part3_container
+
+docker rm blue_part3_container
+
+
+
+docker  run -p 6060:8080 -d --name blue_part3_container part3app
+
