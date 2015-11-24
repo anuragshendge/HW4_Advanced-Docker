@@ -12,4 +12,10 @@
 
 # PART 2
 
+##Screencast
+###(Click the image below  and you will be redirected to YouTube)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Nnl4TjpgI-c/0.jpg)](https://youtu.be/Nnl4TjpgI-c)
+
+# PART 3
+
 
